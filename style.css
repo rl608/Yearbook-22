@@ -1,0 +1,105 @@
+.loader{
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: lightgrey;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.disppear{
+  animation: vanish 1s forwards;
+}
+@keyframes vanish {
+  100%{
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+
+
+
+
+body {
+  margin: 0;
+  font-size: 100px;
+  font-family:"Quatro Black";
+	background: #bcb3ff;
+}
+
+
+
+#navbar {
+  overflow: hidden;
+  background-color:#bcb3ff;
+}
+
+
+#navbar a {
+  float: right;
+  display: block;
+  color: #c9ff68;
+  text-align: center;
+  padding: 8px;
+  text-decoration: none;
+  font-family: "Sawarabi Gothic";
+font-size: 18px;
+}
+
+#navbar a:hover {
+  background-color: #c9ff68;
+  color: #4c2deb;
+
+}
+
+#navbar a.active {
+  background-color: #00d1a9;
+  color: #ffdb08;
+}
+
+#header {
+background-color: #bcb3ff;
+ padding-top: 10px;
+	padding-bottom: 5px;
+  color: black;
+  text-align: center;
+  font-size: 90px; 
+  font-weight: bold;
+  position: fixed;
+  top: 40px;
+  width: 100%;
+  transition: 0.2s;
+}
+
+.content {
+  padding-top: 1px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+
+.sticky + .content {
+  padding-top: 6px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  background-color: #eebdf7;
+  
+}
+.grid-item {
+  background-color:#eebdf7 ;
+  border: 1px solid rgba(188, 179, 225, 1);
+  padding: 90px;
+  font-size: 30px;
+  text-align: center;
+}
